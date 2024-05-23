@@ -28,15 +28,15 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.send('YaY Your Bot Status Changed✨');
+  res.send('Your Bot Status Changed');
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to RTX: http://localhost:${port}`);
-  console.log(`🔗 Powered By RTX`);
+  console.log(`🔗 Listening to A?: http://localhost:${port}`);
+  console.log(`🔗 Powered By A?`);
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = [""];
 
 
 let currentIndex = 0;
@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom}],
+    activities: [{ name: Dogma RP, type: ActivityType.Playing}],
     status: 'dnd',
   });
 
