@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = [""];
+const statusMessages = ["Official Dogma RP Bot"];
 
 
 let currentIndex = 0;
