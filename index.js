@@ -72,10 +72,11 @@ function updateStatusAndSendMessages() {
   const currentStatus = statusMessages[currentIndex];
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
-  client.user.setPresence({
-    activities: [{ name: Dogma RP, type: ActivityType.Playing}],
-    status: 'dnd',
-  });
+client.user.setPresence({
+  activities: [{ name: 'Dogma RP', type: ActivityType.Playing }],
+  status: 'dnd',
+});
+
 
   
   const textChannel = client.channels.cache.get(channelId);
