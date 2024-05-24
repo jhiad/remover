@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`🔗 Powered By A?`);
 });
 
-const statusMessages = ["Sta giocando a *Dogma RP*"];
+const statusMessages = ["Official Dogma Bot"];
 
 let currentIndex = 0;
 const channelId = ''; // Inserisci l'ID del canale qui
