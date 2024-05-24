@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`🔗 Powered By A?`);
 });
 
-const statusMessages = ["Official Dogma Bot"];
+const statusMessages = ["Official Dogma Bot","https://discord.gg/TMM9Yy5hCd"];
 
 let currentIndex = 0;
 const channelId = ''; // Inserisci l'ID del canale qui
@@ -38,7 +38,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: 'Dogma RP', type: ActivityType.Playing }],
+    activities: [{ name: currentStatus, type: ActivityType.Custom}],
     status: 'dnd',
   });
 
