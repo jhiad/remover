@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`🔗 Powered By A?`);
 });
 
-const statusMessages = ["Official Dogma Bot","https://discord.gg/TMM9Yy5hCd"];
+const statusMessages = ["Official Dogma Bot","https://discord.gg/ErZk4HmySV"];
 
 let currentIndex = 0;
 const channelId = ''; // Inserisci l'ID del canale qui
